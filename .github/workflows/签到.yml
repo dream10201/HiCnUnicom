@@ -18,7 +18,7 @@ jobs:
         - name: Checkout codes
           #uses: actions/checkout@v2
           run: |
-            apt install git -y
+            sudo apt install git -y
             git clone https://github.com/mixool/HiCnUnicom.git
             cd HiCnUnicom/
           
