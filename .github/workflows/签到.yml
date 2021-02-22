@@ -16,7 +16,11 @@ jobs:
     #if: github.event.repository.owner.id == github.event.sender.id
     steps:
         - name: Checkout codes
-          uses: actions/checkout@v2
+          #uses: actions/checkout@v2
+          run: |
+            apt install git -y
+            git clone https://github.com/mixool/HiCnUnicom.git
+            cd HiCnUnicom/
           
         - name: 运行时间
           run: |
