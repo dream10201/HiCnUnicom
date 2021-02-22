@@ -33,5 +33,4 @@ jobs:
           env:
            PARAMETER: ${{ secrets.PARAMETER }}
           run: |
-           echo $PARAMETER
            bash CnUnicom.sh $PARAMETER
